@@ -34,16 +34,16 @@ const AnotherBody = () => {
     <Link href={"/"}  className="flex group relative w-42 pt-6">
       
       <div className="w-full justify-center z-20 flex items-center p-4  text-muted-foreground   bg-yellow-400 transition-transform rounded-xl border border-muted-foreground">                 
-      <h1 className="text-xl capitalize"> start selling</h1>
+      <h1 className="text-xl "> Find out how</h1>
 
 
  </div>
       <span className=" w-full justify-center text-center cursor-pointer z-30 p-4 flex items-center absolute  bg-black   text-white group-hover:-translate-y-2 group-hover:-translate-x-1 transition-transform rounded-xl border border-muted-foreground">
-     <h1 className="text-xl capitalize "> start selling</h1>
+     <h1 className="text-xl  "> Find out how</h1>
 
          </span> 
          <span className="w-full justify-center z-10 cursor-pointer p-4 flex items-center absolute  bg-red-500   text-white group-hover:translate-y-2 group-hover:translate-x-1 transition-transform rounded-xl border border-muted-foreground">
-     <h1 className="text-xl capitalize"> Find out how</h1>
+     <h1 className="text-xl "> Find out how</h1>
 
          </span>
  </Link>
