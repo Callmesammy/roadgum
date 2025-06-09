@@ -53,7 +53,7 @@ const Heading = () => {
               
            </div>
            {/** Mobile view */}
-           <div className="px-4 z-9999">
+           <div className="px-4 z-9999 lg:hidden">
             <SheetView/>
             
             </div>
@@ -65,9 +65,9 @@ const Heading = () => {
                 {Document11.map((doc, keys)=>{
                     const isActive = pathName ===doc.url || pathName.startsWith(`${doc.url}/`)
                     return(
-                        <div key={keys} className={cn(" cursor-pointer p-2 tracking-wide border border-black flex hover:border-muted-foreground rounded-full hover:border transition-transform", isActive && "p-2 tracking-wide bg-white font-semibold text-pretty text-black")}>
+                        <Link href={doc.url} key={keys} className={cn(" cursor-pointer p-2 tracking-wide border border-black flex hover:border-muted-foreground rounded-full hover:border transition-transform", isActive && "p-2 tracking-wide bg-white font-semibold text-pretty text-black")}>
                                 <h1 className="font- capitalize  ">{doc.label}</h1>
-                        </div>
+                        </Link>
                     )
                 })}
             </div>
