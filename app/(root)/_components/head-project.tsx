@@ -1,24 +1,35 @@
 "use client"
 
-import {  Philosopher } from "next/font/google";
+import {  Mulish, Philosopher } from "next/font/google";
 import { ImGithub } from "react-icons/im";
 import { FaStar } from "react-icons/fa6";
+import { usePathname } from "next/navigation";
+import { Document11 } from ".";
+import { cn } from '../../../lib/utils';
+import Link from "next/link";
 
 const philosopher = Philosopher({
   subsets: ["latin"],
   weight: '400'
 });
+
+const mulish = Mulish({
+    subsets: ["latin"],
+    weight: '400'
+  });
+
 const Heading = () => {
+    const pathName = usePathname()
     const num = 2
 
     const onclick=(url: string)=>{
         window.location.href = url
     }
     return (  
-        <div className=" flex px-2 w-full h-22 bg-black text-white items-center justify-between">
-           <div className="w-full flex gap-3 items-center ">
+        <div className=" flex  w-full h-22 bg-black text-white items-center justify-between">
+           <div className={`${mulish.className}w-full flex gap-3 items-center `}>
             <span onClick={()=>onclick("/")} className="cursor-pointer">
-                <h1 className={`${philosopher.className} lg:text-4xl text-4xl font-bold `}> Roadgum</h1>
+                <h1 className={`${philosopher.className} font-black lg:text-4xl text-4xl font- `}> Roadgum</h1>
                 
             </span>
             <a href="https://github.com/Callmesammy" target="_blank" className="flex">
@@ -40,7 +51,24 @@ const Heading = () => {
             </a>
               
            </div>
-           22
+           <div className="lg:flex gap-2 items-center hidden">
+           <Link href={"/link"} className=" cursor-pointer p-2 tracking-wide border border-black flex hover:border-muted-foreground rounded-full hover:border transition-transform">
+                    Discover
+                    </Link>
+            <div className="flex gap-2 w-full p-2">
+                {Document11.map((doc, keys)=>{
+                    const isActive = pathName ===doc.url || pathName.startsWith(`${doc.url}/`)
+                    return(
+                        <div key={keys} className={cn(" cursor-pointer p-2 tracking-wide border border-black flex hover:border-muted-foreground rounded-full hover:border transition-transform", isActive && "p-2 tracking-wide bg-white font-semibold text-pretty text-black")}>
+                                <h1 className="font- capitalize  ">{doc.label}</h1>
+                        </div>
+                    )
+                })}
+            </div>
+                    <Link href={"/link"} className=" bg-pink-400 h-22 p-4 items-center text-center flex font-semibold hover:bg-white transition-colors duration-500 ease-in-out text-black">
+                    Dashboard
+                    </Link>
+           </div>
         </div>
     );
 }
