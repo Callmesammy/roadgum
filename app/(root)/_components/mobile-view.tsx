@@ -25,7 +25,7 @@ import Link from "next/link";
 
 
   </SheetTrigger>
-  <SheetContent side="top" className="pt-10 text-center flex top-20 bg-black text-white right-4">
+  <SheetContent side="top" className="pt-10 text-center flex top-20 bg-black text-white ">
     <SheetHeader>
       <SheetTitle>Are you absolutely sure?</SheetTitle>
       <SheetDescription>
