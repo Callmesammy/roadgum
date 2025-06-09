@@ -11,7 +11,7 @@ export const ThreeDMarquee = ({
 }) => {
   // Split the images array into 4 equal parts
   const chunkSize = Math.ceil(images.length / 4);
-  const chunks = Array.from({ length: 4 }, (_, colIndex) => {
+  const chunks = Array.from({ length: 11 }, (_, colIndex) => {
     const start = colIndex * chunkSize;
     return images.slice(start, start + chunkSize);
   });
@@ -28,7 +28,7 @@ export const ThreeDMarquee = ({
             style={{
               transform: "rotateX(55deg) rotateY(0deg) rotateZ(-45deg)",
             }}
-            className="relative top-96 right-[50%] grid size-full origin-top-left grid-cols-4 gap-8 transform-3d"
+            className="relative top-96 right-[15%] grid size-full origin-top-left grid-cols-10 gap-3 transform-3d"
           >
             {chunks.map((subarray, colIndex) => (
               <motion.div
@@ -56,7 +56,7 @@ export const ThreeDMarquee = ({
                       key={imageIndex + image}
                       src={image}
                       alt={`Image ${imageIndex + 1}`}
-                      className="aspect-[970/700] rounded-lg object-cover ring ring-gray-950/5 hover:shadow-2xl"
+                      className="aspect-[970/700]  object-cover ring ring-gray-950/5 hover:shadow-2xl"
                       width={970}
                       height={700}
                     />
