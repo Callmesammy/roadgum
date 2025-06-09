@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import BckImg from "./_components/back-img";
 import AnotherBody from "./_components/another-body";
+import Coolbody from "./_components/cool-body";
 
 const philosopher = Philosopher({
   subsets: ["latin"],
@@ -61,7 +62,11 @@ export default function Home() {
   <AnotherBody/>
 </div>
 
-    
+{/*** Image segment  */}
+
+<div className="border-black w-full border-2 bg-white h-full">
+    <Coolbody/>
+</div>
     </div>
   );
 }
