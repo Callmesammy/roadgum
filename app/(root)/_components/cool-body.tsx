@@ -10,12 +10,12 @@ const mulish = Mulish({
 const Coolbody = () => {
     return (  
         <div className="grid md:grid-cols-2 w-full">
-            <div className="flex border border-black w-full h-72 items-center bg-pink-900/85 md:px-8 ">
-            <h1 className={`${mulish.className} text-center flex text-4xl px-2 pt-3`}>Don't take risks. That's scary!</h1>
+            <div className="flex border justify-center border-black w-full h-72 items-center bg-pink-900/85 md:px-8 ">
+            <h1 className={`${mulish.className} text-center flex lg:text-5xl text-4xl  px-2 pt-3`}>Don't take risks. <br/> That's scary!</h1>
 
 </div>
-<div className="flex  w-full h-72 items-center border border-black bg-pink-400 md:px-8 ">
-            <h1 className={`${mulish.className} text-center flex text-4xl px-2 pt-3`}>Place small bets. That's exciting!</h1>
+<div className="flex  w-full h-72 justify-center items-center border border-black bg-pink-400 md:px-8 ">
+            <h1 className={`${mulish.className} text-center flex lg:text-5xl text-4xl px-2 pt-3`}>Place small bets. <br/> That's exciting!</h1>
 
 </div>      
 
