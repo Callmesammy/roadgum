@@ -16,7 +16,7 @@ const Heading = () => {
     }
     return (  
         <div className=" flex px-2 w-full h-22 bg-black text-white items-center justify-between">
-           <div className="w-full flex gap-3 items-center">
+           <div className="w-full flex gap-3 items-center ">
             <span onClick={()=>onclick("/")} className="cursor-pointer">
                 <h1 className={`${philosopher.className} lg:text-4xl text-4xl font-bold `}> Roadgum</h1>
                 
@@ -40,6 +40,7 @@ const Heading = () => {
             </a>
               
            </div>
+           22
         </div>
     );
 }
