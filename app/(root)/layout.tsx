@@ -10,7 +10,10 @@ const MainPage = ({
 }: mainProps) => {
     return ( 
        <div className="flex w-full flex-col">
-        <Heading/>
+        <section className="sticky top-0 z-50">
+                    <Heading/>
+
+        </section>
        {children}
        </div>
      );

@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { Document11 } from ".";
 import { cn } from '../../../lib/utils';
 import Link from "next/link";
+import SheetView from "./mobile-view";
 
 const philosopher = Philosopher({
   subsets: ["latin"],
@@ -51,6 +52,11 @@ const Heading = () => {
             </a>
               
            </div>
+           {/** Mobile view */}
+           <div className="px-4 z-9999">
+            <SheetView/>
+            
+            </div>
            <div className="lg:flex gap-2 items-center hidden">
            <Link href={"/link"} className=" cursor-pointer p-2 tracking-wide border border-black flex hover:border-muted-foreground rounded-full hover:border transition-transform">
                     Discover
