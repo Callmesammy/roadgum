@@ -23,7 +23,7 @@ export default function Home() {
       </h2>
       <p className={`${mulish.className} max mx-auto text-lg md:text-xl text-neutral-700 dark:text-neutral-400 text-center`}>
       Anyone can earn their first dollar online. Just start with what you know,
-     <br className="hidden md:flex"/> see what sticks, and get paid. <br className="md:hidden"/> It's that easy
+     <br className="hidden md:flex"/> see what sticks, and get paid.  It's that easy
       </p>
       <div className=" grid md:flex items-center gap-1 pt-6">
       <Link href={"/"}  className="flex group relative w-full">
