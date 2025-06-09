@@ -43,7 +43,7 @@ export default function Home() {
 
          </span>
  </Link>
- <div className=" w-100 flex items-center z-50 ">
+ <div className=" w-100  items-center z-30 ">
      <Input placeholder="Search Marketplace" className=" bg-black flex w-full h-18 text-lg text-white"/>
 
  </div>
