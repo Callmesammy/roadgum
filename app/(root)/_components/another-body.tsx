@@ -43,7 +43,7 @@ const AnotherBody = () => {
 
          </span> 
          <span className="w-full justify-center z-10 cursor-pointer p-4 flex items-center absolute  bg-red-500   text-white group-hover:translate-y-2 group-hover:translate-x-1 transition-transform rounded-xl border border-muted-foreground">
-     <h1 className="text-xl capitalize"> start selling</h1>
+     <h1 className="text-xl capitalize"> Find out how</h1>
 
          </span>
  </Link>
