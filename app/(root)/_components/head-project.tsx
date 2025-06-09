@@ -65,7 +65,7 @@ const Heading = () => {
                     )
                 })}
             </div>
-                    <Link href={"/link"} className=" bg-pink-400 h-22 p-4 items-center text-center flex font-semibold hover:bg-white transition-colors duration-500 ease-in-out text-black">
+                    <Link href={"/link"} className=" bg-pink-300 h-22 p-4 items-center text-center flex font-semibold hover:bg-white transition-colors duration-500 ease-in-out text-black">
                     Dashboard
                     </Link>
            </div>
