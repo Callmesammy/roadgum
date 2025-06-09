@@ -34,7 +34,7 @@ import Link from "next/link";
                            const isActive = pathName ===doc.url || pathName.startsWith(`${doc.url}/`)
                            return(
                                <Link onClick={()=> setisClosing(false)} href={doc.url} key={keys} className={cn("  cursor-pointer p-2 tracking-wide border border-black flex hover:border-muted-foreground rounded-full hover:border transition-transform", isActive && "p-2 tracking-wide bg-white font-semibold text-pretty text-black ")}>
-                                       <h1 className="text-lg justify-center capitalize flex  items-center ">{doc.label}</h1>
+                                       <span className="text-lg justify-center capitalize flex  items-center ">{doc.label}</span>
                                </Link>
                            )
                        })}
