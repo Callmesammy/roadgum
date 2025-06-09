@@ -10,7 +10,7 @@ const mulish = Mulish({
 const AnotherBody = () => {
     return (  
         <div className="w-full flex h-full flex-col ">
-<div className="w-full h-62 flex bg-white items-center justify-center">
+<div className="w-full h-52 flex bg-white items-center justify-center">
 
     <h1 className={`${mulish.className} text-center flex text-4xl px-2`}>You know all those great ideas you have? </h1>
 </div>
@@ -24,7 +24,7 @@ const AnotherBody = () => {
   className="w-full  rounded-full relative flex object-contain opacity-55"/>
 </div>
 
-<div className="w-full h-62 flex flex-col bg-white items-center justify-center">
+<div className="w-full h-82 flex flex-col bg-white items-center justify-center">
 
     <h1 className={`${mulish.className} text-center flex text-4xl px-2 pt-3`}>We want you to try them, lots of them, and find out what works. </h1>
     <p className={`${mulish.className} text-center flex text-md pt-3 px-2`}>
