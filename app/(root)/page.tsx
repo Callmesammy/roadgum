@@ -56,7 +56,7 @@ export default function Home() {
 
 {/*** Image segment  */}
 
-<div className="border-black w-full border-2 h-screen bg-red-900">
+<div className="border-black w-full border-2 h-screen bg-white">
 
   <AnotherBody/>
 </div>
