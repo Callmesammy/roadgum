@@ -4,6 +4,7 @@ import { BackgroundLines } from '@/components/ui/background-lines';
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import BckImg from "./_components/back-img";
+import AnotherBody from "./_components/another-body";
 
 const philosopher = Philosopher({
   subsets: ["latin"],
@@ -16,8 +17,8 @@ const mulish = Mulish({
 
 export default function Home() {
   return (
-    <div className="flex w-full h-screen relative bg-muted-forground flex-col ">
-       <BackgroundLines className="flex items-center justify-center w-full h-full flex-col border-2 border-black  px-4">
+    <div className="flex w-full h-full  bg-muted-forground flex-col ">
+       <BackgroundLines className="relative flex items-center justify-center w-full h-screen flex-col border-2 border-black  px-4">
       <h2 className={` ${mulish.className} tracking-wide bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-5xl md:text-6xl lg:text-8xl font-sans py-2 md:py-10 relative z-20 font-bold `}>
       Go from  <br className="md:hidden"/>0 to $1
       </h2>
@@ -25,7 +26,7 @@ export default function Home() {
       Anyone can earn their first dollar online. Just start with what you know,
      <br className="hidden md:flex"/> see what sticks, and get paid.  It's that easy
       </p>
-      <div className=" grid md:flex items-center gap-1 pt-6">
+      <div className=" grid space-y-3 md:flex items-center gap-1 pt-6">
       <Link href={"/"}  className="flex group relative w-full">
       
       <div className="w-full justify-center z-20 flex items-center p-5  text-muted-foreground   bg-yellow-400 transition-transform rounded-xl border border-muted-foreground">                 
@@ -42,19 +43,24 @@ export default function Home() {
 
          </span>
  </Link>
- <div className="p-5 w-full flex items-center z-50">
-     <Input placeholder="Search Marketplace" className=" bg-black flex w-82 h-18 text-lg text-white"/>
+ <div className=" w-100 flex items-center z-50 ">
+     <Input placeholder="Search Marketplace" className=" bg-black flex w-full h-18 text-lg text-white"/>
 
  </div>
 
  </div>
+ <div className="absolute flex w-full h-full">
+<BckImg/>
+</div>
     </BackgroundLines>
 
 {/*** Image segment  */}
-<div className="absolute flex w-full h-full">
-<BckImg/>
+
+<div className="border-black w-full border-2 h-screen bg-red-900">
+
+  <AnotherBody/>
 </div>
-hjdshjdshjds
+
     
     </div>
   );

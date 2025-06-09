@@ -28,8 +28,7 @@ import Link from "next/link";
   <SheetContent side="top" className="pt-10 text-center flex top-20 bg-black text-white ">
     <SheetHeader>
       <SheetTitle>Are you absolutely sure?</SheetTitle>
-      <SheetDescription>
-        <div className="flex text-center justify-center items-center w-full flex-col gap-2 p-2">
+      <SheetDescription className="flex text-center justify-center items-center w-full flex-col gap-2 p-2">
                        {Document11.map((doc, keys)=>{
                            const isActive = pathName ===doc.url || pathName.startsWith(`${doc.url}/`)
                            return(
@@ -38,7 +37,6 @@ import Link from "next/link";
                                </Link>
                            )
                        })}
-                   </div>
       </SheetDescription>
     </SheetHeader>
   </SheetContent>
