@@ -4,8 +4,8 @@ import { ImGithub } from "react-icons/im";
 
 const Remarks = () => {
     return (
-        <div className="h-full px-3 overflow-x-hidden  pt-4 grid lg:grid-cols-[1fr_2fr] bg-pink-400 items-center ">
-      <div className="w-full h-[700px] relative flex items-center justify-center">
+        <div className="h-full overflow-x-hidden  pt-4 grid lg:grid-cols-[1fr_2fr] bg-pink-400 items-center ">
+      <div className="w-full px-10 h-[700px] relative flex items-center justify-center">
 
              <div className="  pt-4 text-xl font-semibold  justify-center  gap-2   items-center flex group  border-black rounded-full  group-hover:-translate-x-1 duration-300 group-hover:-translate-y-1 transition-transform">
             “I launched MaxPacks as an experimental side gig; but within 2 years those Procreate brushes were earning more than my 6-figure salary in CG. Leaving in favor of Gumroad enabled me to explore other aspects of my art, develop new hobbies, and finally prioritize my personal life.”
@@ -31,9 +31,9 @@ const Remarks = () => {
      
             
             <div className="w-full flex-col  h-[700px] relative flex justify-center bg-white">
-<h1 className=" px-5 text-3xl">Sell anywhere
+<h1 className="  text-xl">Sell anywhere
 </h1>
- <div className=" pt-4 text-2xl    justify-center  gap-2 w-[500px] shrink-0   items-center flex group  border-black rounded-full  group-hover:-translate-x-1 duration-300 group-hover:-translate-y-1 transition-transform">
+ <div className=" pt-4 text-xl    justify-center  gap-2 w-full shrink-0   items-center flex group  border-black rounded-full  group-hover:-translate-x-1 duration-300 group-hover:-translate-y-1 transition-transform">
 Create and customize your storefront with our all-in-one platform or choose to use your personal site instead. With Zapier, you can seamlessly connect your Gumroad account to thousands of apps in your current stack.
 
 </div>
