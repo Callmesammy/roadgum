@@ -12,10 +12,10 @@ const Wrightups = () => {
     return ( 
         <div className="w-full flex flex-col">
             <div className="w-full flex-col flex h-82 items-center justify-center">
-            <h2 className={` ${mulish.className} tracking-wide bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-5xl md:text-5xl lg:text-6xl font-sans py-2 md:py-10 relative z-20 font-bold `}>
+            <h2 className={` ${mulish.className} tracking-wide bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-4xl md:text-5xl lg:text-6xl font-sans py-2 md:py-10 relative z-20 font-bold `}>
             Make your own road </h2>
-            <p className="text-xl items-center flex w-full truncate text-center">
-            Whether you need more balance, flexibility, or just a different gig, we make it easier to chart a new path. You don't have to be a tech expert or even understand how to start a business. You just gotta take what you know and sell it.
+            <p className="text-lg px-2 justify-center items-center flex w-full  text-center">
+            Whether you need more balance, flexibility, or just a different gig, <br /> we make it easier to chart a new path. You don't have to be a tech expert or even understand how to start a business. <br/> You just gotta take what you know and sell it.
 
             </p>
           
@@ -35,15 +35,15 @@ const Wrightups = () => {
  </Link>
             </div>
             
-    <div className="w-full h-132 grid lg:grid-cols-2 pt-4">
+    <div className="w-full lg:h-[700px] h-[1000px] grid lg:grid-cols-2 pt-4">
         <div className="relative h-full w-full bg-teal-600 border border-black">
-        <Image src={"/home.svg"} alt="image" fill className="object-fill"/>
+        <Image src={"/home.svg"} alt="image" fill className="object-contain w-full h-full flex"/>
 
         </div>
 
 
-        <div className="relative h-full w-full bg-teal-600 border border-black">
-            <h1 className="">Sell anything
+        <div className="relative h-full w-full bg-white border border-black">
+            <h1 className="tex-3xl font-bold">Sell anything
             </h1>
         </div>
     </div>
