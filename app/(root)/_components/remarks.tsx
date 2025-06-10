@@ -30,6 +30,22 @@ const Remarks = () => {
 
      
             
+            <div className="w-full flex-col  h-[700px] relative flex justify-center bg-white">
+<h1 className=" px-5 text-3xl">Sell anywhere
+</h1>
+ <div className=" pt-4 text-2xl px-5   justify-center  gap-2 w-[500px]  items-center flex group  border-black rounded-full  group-hover:-translate-x-1 duration-300 group-hover:-translate-y-1 transition-transform">
+Create and customize your storefront with our all-in-one platform or choose to use your personal site instead. With Zapier, you can seamlessly connect your Gumroad account to thousands of apps in your current stack.
+
+</div>
+
+</div>
+ <div className="w-full h-[700px] relative flex bg-black">
+<Image src={"/homet.svg"} alt="max image" fill className="object-contain lg:pt-3 pt-[100px] flex z-10"/>
+
+
+
+</div>
+
 
         </div>
       );
