@@ -22,15 +22,15 @@ const Wrightups = () => {
           
     <Link href={"/"}  className="flex group  relative w-62 pt-6">
       
-      <div className="  gap-1 text-xl w-full justify-center z-20 shadow flex items-center font-bold    text-red-400 transition-transform rounded-xl ">                 
+      <div className="  gap-1 text-xl w-full justify-center z-20 shadow flex items-center    text-red-400 transition-transform rounded-xl ">                 
       Explore Features  <FaLongArrowAltRight />
 
 
 
  </div>
-      <span className="gap-1  text-xl w-full justify-center text-center cursor-pointer z-30  font-bold flex items-center absolute  text-black   group-hover:-translate-y-2 group-hover:-translate-x-1 transition-transform  ">
+      <span className="gap-1  text-xl w-full justify-center text-center cursor-pointer z-30 flex items-center absolute  text-black   group-hover:-translate-y-2 group-hover:-translate-x-1 transition-transform  ">
       Explore Features
-      <FaLongArrowAltRight />
+      <FaLongArrowAltRight className="pt-1" />
          </span> 
        
  </Link>
