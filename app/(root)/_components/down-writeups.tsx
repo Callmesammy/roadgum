@@ -2,6 +2,7 @@ import { Mulish } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { selling } from ".";
 
 
 const mulish = Mulish({
@@ -42,9 +43,20 @@ const Wrightups = () => {
         </div>
 
 
-        <div className="relative h-full w-full bg-white border border-black">
-            <h1 className="tex-3xl font-bold">Sell anything
+        <div className="items-center space-y-6 relative h-full w-full px-7 pt-6 bg-white border justify-center border-black">
+            <h1 className="text-3xl ">Sell anything
             </h1>
+            <p className="text-xl">
+            Video lessons. Monthly subscriptions. Whatever! Gumroad was created to help you experiment with all kinds of ideas and formats.
+            </p>
+
+            <div className=" flex text-lg space-y-6 flex-col">
+             {selling.map((doc, fl)=>(
+                <div key={fl}>
+                    <h1>{doc}</h1>
+                </div>
+             ))}
+            </div>
         </div>
     </div>
     

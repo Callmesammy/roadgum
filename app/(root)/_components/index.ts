@@ -17,3 +17,12 @@ export const Document11 = [
 },
 
 ]
+export const selling =[
+    "→ Sell your Top 10 lists ",
+    "→ Sell your crypto tips", 
+    "→ Sell your fractal pack", 
+    "→ Sell your keto cookbook ",
+    "→ Sell your C4D scenes", 
+    "→ Sell your new emojis",
+    "→ Seriously, sell anything!"
+]
