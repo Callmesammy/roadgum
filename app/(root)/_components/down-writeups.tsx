@@ -37,8 +37,8 @@ const Wrightups = () => {
             </div>
             
     <div className="w-full lg:h-[700px] h-[1000px] grid lg:grid-cols-2 pt-4">
-        <div className="relative h-full w-full bg-teal-600 border border-black">
-        <Image src={"/home.svg"} alt="image" fill className="object-contain w-full h-full flex"/>
+        <div className="relative lg:h-[700px] h-[600px] w-full bg-teal-600 border border-black">
+        <Image src={"/home.svg"} alt="image" fill className="object-contain "/>
 
         </div>
 
