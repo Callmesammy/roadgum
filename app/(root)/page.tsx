@@ -7,6 +7,7 @@ import BckImg from "./_components/back-img";
 import AnotherBody from "./_components/another-body";
 import Coolbody from "./_components/cool-body";
 import Wrightups from "./_components/down-writeups";
+import Remarks from "./_components/remarks";
 
 const philosopher = Philosopher({
   subsets: ["latin"],
@@ -72,6 +73,12 @@ export default function Home() {
 
 <div className="border-black w-full border-2 bg-white h-full">
     <Wrightups/>
+</div>
+{/*** Image segment  */}
+
+<div className="border-black w-full border-2 bg-white h-full">
+<Remarks/>
+
 </div>
     </div>
   );
