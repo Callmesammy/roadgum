@@ -14,7 +14,7 @@ const AnotherBody = () => {
 
     <h1 className={`${mulish.className} text-center flex text-4xl px-2`}>You know all those great ideas you have? </h1>
 </div>
-<div className="flex  w-full h-72 bg-yellow-500/75 md:px-8 md:rounded-full">
+<div className="flex  w-full h-[600] bg-yellow-500/75 md:px-8 md:rounded-full">
 
 <video   src="/vid.mov"
   autoPlay
@@ -24,11 +24,11 @@ const AnotherBody = () => {
   className="w-full  rounded-full relative flex object-contain opacity-55"/>
 </div>
 
-<div className="w-full h-82 flex flex-col bg-white items-center justify-center">
+<div className="w-full h-[700px] flex flex-col bg-white items-center justify-center">
 
-    <h1 className={`${mulish.className} text-center flex text-4xl px-2 pt-3`}>We want you to try them, lots of them, and find out what works. </h1>
-    <p className={`${mulish.className} text-center flex text-md pt-3 px-2`}>
-    You don't have to be a tech expert or even understand how to start a business. You just gotta take what you know and sell it.
+    <h1 className={`${mulish.className} text-center flex text-5xl px-2 pt-3`}>We want you to try them, lots of them, <br/> and find out what works. </h1>
+    <p className={`${mulish.className} text-center flex text-md pt-3 px-2 text-xl`}>
+    You don't have to be a tech expert or even understand how to start a business. <br/> You just gotta take what you know and sell it.
     </p>
 
     <Link href={"/"}  className="flex group relative w-42 pt-6">
