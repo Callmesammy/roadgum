@@ -4,7 +4,7 @@ import { ImGithub } from "react-icons/im";
 
 const Remarks = () => {
     return (
-        <div className="h-full  pt-4 grid lg:grid-cols-[1fr_2fr] bg-pink-400">
+        <div className="h-full overflow-x-clip pt-4 grid lg:grid-cols-[1fr_2fr] bg-pink-400">
       <div className="w-full h-[700px] relative flex items-center justify-center">
 
              <div className=" pt-4 text-3xl px-5 font-semibold  justify-center  gap-2 w-[500px]  items-center flex group  border-black rounded-full  group-hover:-translate-x-1 duration-300 group-hover:-translate-y-1 transition-transform">
