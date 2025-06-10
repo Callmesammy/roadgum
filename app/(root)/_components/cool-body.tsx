@@ -24,7 +24,7 @@ const Coolbody = () => {
             <Image src={"/sadbk.svg"} fill alt="img" className="object-contain flex w-72 items-center justify-center "/>
 </div>   
 <div className="flex  w-full lg:h-[700px] h-[700px]  bg-yellow-500 md:px-8 relative">
-          <span className=" absolute w-72 bg-white flex h-15 items-center text-lg px-2 z-10 rounded-full border-2 border-black top-10 text-black"> ...start by selling a blog post!</span>
+          <span className=" absolute w-72 bg-white flex h-15 items-center text-lg px-2 z-10 rounded-full border-2 border-black top-62 text-black"> ...start by selling a blog post!</span>
             <Image src={"/blog.svg"} fill alt="img" className="object-contain flex w-72 items-center justify-center "/>
 
             <Image src={"/excite.svg"} height={3} width={2} alt="img" className=" absolute bottom-0 flex w-62 right-22 items-center justify-center "/>
