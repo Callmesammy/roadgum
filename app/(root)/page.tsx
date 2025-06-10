@@ -8,6 +8,7 @@ import AnotherBody from "./_components/another-body";
 import Coolbody from "./_components/cool-body";
 import Wrightups from "./_components/down-writeups";
 import Remarks from "./_components/remarks";
+import Remarks2 from "./_components/remarks2";
 
 const philosopher = Philosopher({
   subsets: ["latin"],
@@ -78,6 +79,11 @@ export default function Home() {
 
 <div className="border-black w-full border-2 bg-white h-full">
 <Remarks/>
+
+</div>
+
+<div className="border-black w-full border-2 bg-white h-full">
+<Remarks2/>
 
 </div>
     </div>

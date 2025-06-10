@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { FaStar } from "react-icons/fa6";
-import { ImGithub } from "react-icons/im";
+
 
 const Remarks = () => {
     return (
