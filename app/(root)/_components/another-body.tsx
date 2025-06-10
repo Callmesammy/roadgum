@@ -28,7 +28,7 @@ const AnotherBody = () => {
 
     <h1 className={`${mulish.className} text-center flex text-5xl px-2 pt-3`}>We want you to try them, lots of them, <br/> and find out what works. </h1>
     <p className={`${mulish.className} text-center flex text-md pt-3 px-2 text-xl`}>
-    You don't have to be a tech expert or even understand how to start a business. <br className="md:hidden "/> You just gotta take what you know and sell it.
+    You don't have to be a tech expert or even understand how to start a business. <br className="md:flex hidden "/> You just gotta take what you know and sell it.
     </p>
 
     <Link href={"/"}  className="flex group relative w-42 pt-6">
