@@ -22,7 +22,7 @@ export function Carding({
     others={}
 }:Carditems) {
   return (
-    <div className="w-full h-full px-2 p-2">
+    <div className="w-full h-full p-2">
 
     <Card className={`${color} w-full  border rounded-md h-[300] border-black`}>
       <CardHeader>       

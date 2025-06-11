@@ -27,17 +27,17 @@ export const selling =[
     "→ Seriously, sell anything!"
 ]
 
-interface Cardite = [
+export const Cardite = [
     {
          id: " ",
     image: " ",
-    color?: "",
+    color: "",
     label: "",
     description: " ",
     others:{
-        item1?: " ", 
-        item2?: "", 
-        items?: " ", 
+        item1: " ", 
+        item2: "", 
+        items: " ", 
     }
     }
 ]
