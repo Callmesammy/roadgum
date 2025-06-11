@@ -89,7 +89,7 @@ export default function Home() {
 </div>
 
 
-<div className="border-black w-full border-2 bg-white h-full">
+<div className="border-black grid md:grid-cols-2 lg:grid-cols-3 w-full border-2 bg-white h-full">
 <Carding image={"/pic/2.svg"} label="say something" description="Enter yours text here and more"/>
 
 </div>

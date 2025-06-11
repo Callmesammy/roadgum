@@ -27,28 +27,18 @@ export const selling =[
     "→ Seriously, sell anything!"
 ]
 
-interface Cardite{
-    id: number,
-    image: string,
-    color?: string,
-    label: string,
-    description: string,
+interface Cardite = [
+    {
+         id: " ",
+    image: " ",
+    color?: "",
+    label: "",
+    description: " ",
     others:{
-        item1?: string, 
-        item2?: string, 
-        items?: string, 
+        item1?: " ", 
+        item2?: "", 
+        items?: " ", 
     }
-}
-export const cardItems =[{
-    image: "/pic/1.svg",
-   label: "3D",
-   description: "Perfect your craft with the same tools used at Dreamworks and Pixar",
-   others:
-       [
-           "blsssender ", "3d model ", "spark ar ", 
-       ]
-   },
-
-
-  
+    }
 ]
+
