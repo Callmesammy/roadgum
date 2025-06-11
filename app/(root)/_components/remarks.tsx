@@ -13,8 +13,8 @@ const Remarks = () => {
             </div>
 
             </div>
-             <div className="w-full h-[700px] relative flex ">
-            <Image src={"/max.webp"} alt="max image" fill className="object-contain lg:pt-3 pt-[100px] flex z-10"/>
+             <div className="w-full h-[700px] relative flex items-center ">
+            <Image src={"/max.webp"} alt="max image" fill className="object-contain lg:pt-3 pt-[100px] flex z-10 "/>
             <Image src={"/writing.svg"} alt="max image" width={200} height={200} className="z-10 left-1 object-contain pt-[300px] flex lg:absolute"/>
             <div className="absolute  group group-hover:translate-x-2 group-hover:translate-y-2 transition-transform flex items-center justify-center w-52 h-13 bg-black md:right-42 insert-0 bottom-6 lg:right-32 right-12 z-20 p-2 rounded-full">
              <div className=" cursor-pointer gap-2 absolute items-center flex group w-52 h-13 bg-white z-25 p-2 border-2 border-black rounded-full  group-hover:-translate-x-1 duration-300 group-hover:-translate-y-1 transition-transform">

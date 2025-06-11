@@ -9,6 +9,7 @@ import Coolbody from "./_components/cool-body";
 import Wrightups from "./_components/down-writeups";
 import Remarks from "./_components/remarks";
 import Remarks2 from "./_components/remarks2";
+import { Carding } from "./_components/card-input";
 
 const philosopher = Philosopher({
   subsets: ["latin"],
@@ -84,6 +85,12 @@ export default function Home() {
 
 <div className="border-black w-full border-2 bg-white h-full">
 <Remarks2/>
+
+</div>
+
+
+<div className="border-black w-full border-2 bg-white h-full">
+<Carding image={"/pic/2.svg"} label="say something" description="Enter yours text here and more"/>
 
 </div>
     </div>

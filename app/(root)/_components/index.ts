@@ -26,3 +26,29 @@ export const selling =[
     "→ Sell your new emojis",
     "→ Seriously, sell anything!"
 ]
+
+interface Cardite{
+    id: number,
+    image: string,
+    color?: string,
+    label: string,
+    description: string,
+    others:{
+        item1?: string, 
+        item2?: string, 
+        items?: string, 
+    }
+}
+export const cardItems =[{
+    image: "/pic/1.svg",
+   label: "3D",
+   description: "Perfect your craft with the same tools used at Dreamworks and Pixar",
+   others:
+       [
+           "blsssender ", "3d model ", "spark ar ", 
+       ]
+   },
+
+
+  
+]
