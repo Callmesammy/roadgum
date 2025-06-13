@@ -93,6 +93,13 @@ export default function Home() {
 <Carding image={"/pic/2.svg"} label="say something" description="Enter yours text here and more"/>
 
 </div>
+
+{/*** Search Testing segment  ***/}
+
+<div className="border-black grid md:grid-cols-2 lg:grid-cols-3 w-full border-2 bg-white h-full">
+yatty 
+
+</div>
     </div>
   );
 }

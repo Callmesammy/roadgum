@@ -42,3 +42,11 @@ export const Cardite = [
     }
 ]
 
+
+export const courses = [
+    { id: 1, title: 'Intro to AI', category: 'AI', level: 'Beginner' },
+    { id: 2, title: 'Advanced React', category: 'Web Dev', level: 'Advanced' },
+    { id: 3, title: 'Python Basics', category: 'Programming', level: 'Beginner' },
+    { id: 4, title: 'Machine Learning', category: 'AI', level: 'Intermediate' },
+  ];
+  
