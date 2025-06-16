@@ -90,8 +90,8 @@ export default function Home() {
 
 
 <div className="border-black grid md:grid-cols-2 lg:grid-cols-3 w-full border-2 bg-white h-full">
-<Carding image={"/pic/2.svg"} label="say something" description="Enter yours text here and more"/>
-
+    
+<Carding image={"/pic/2.svg"} label="Title text here" description="In this segment we describe informations" />
 </div>
 
 {/*** Search Testing segment  ***/}
