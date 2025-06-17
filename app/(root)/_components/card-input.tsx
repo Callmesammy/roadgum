@@ -34,7 +34,7 @@ export function Carding({
     <Card className={`w-full flex h-[380px] ${color} rounded border border-black shadow-md `}>
       <CardHeader>
         <CardTitle className="flex flex-col gap-3 text-3xl "><Image src={image} alt="bg-image" width={100} height={74} className="object-contain"/> 
-         <Link href={""} className="hover:underline"> {label} </Link> 
+         <Link href={`/discovery? `} className="hover:underline"> {label} </Link> 
          </CardTitle>
         <CardDescription className="text-xl text-black">
             {description}

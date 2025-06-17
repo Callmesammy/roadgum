@@ -4,10 +4,10 @@ import {  Mulish, Philosopher } from "next/font/google";
 import { ImGithub } from "react-icons/im";
 import { FaStar } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
-import { Document11 } from ".";
 import { cn } from '../../../lib/utils';
 import Link from "next/link";
-import SheetView from "./mobile-view";
+import SheetView from "@/app/(root)/_components/mobile-view";
+import { Document11 } from "@/app/(root)/_components";
 
 const philosopher = Philosopher({
   subsets: ["latin"],
@@ -19,7 +19,7 @@ const mulish = Mulish({
     weight: '400'
   });
 
-const Heading = () => {
+const HearderPT = () => {
     const pathName = usePathname()
     const num = 2
 
@@ -79,4 +79,4 @@ const Heading = () => {
     );
 }
  
-export default Heading;
+export default HearderPT;
