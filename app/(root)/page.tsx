@@ -92,7 +92,10 @@ export default function Home() {
 <div className="border-black grid md:grid-cols-2 lg:grid-cols-3 w-full border-2 bg-white h-full">
     
 <Carding color="bg-green-400" others={{items: "Blend", item1: "3d Model", item2: "spark"}} image={"/pic/1.svg"} label="3d" description="Perfect ypur craft with thge same tools used at Dream works and pixar " />
-<Carding color="bg-orange-400" others={{items: "Blend", item1: "3d Model", item2: "spark"}} image={"/pic/2.svg"} label="Audio" description="Open your ears and mind to interviews, meditations, and crime thrillers " />
+<Carding color="bg-orange-400" others={{items: "Meditations", item1: "hypothesis", item2: "submliminal messages"}} image={"/pic/2.svg"} label="Audio" description="Open your ears and mind to interviews, meditations, and crime thrillers " />
+<Carding color="bg-red-400" others={{items: "notion template", item1: "investing", item2: "instagram"}} image={"/pic/3.svg"} label="Business & Money" description="Learn to earn in an increasingly unpredictable world  " />
+<Carding color="bg-yellow-400" others={{items: "comic", item1: "manga", item2: "anime"}} image={"/pic/4.svg"} label="Comics & Graphic Novels" description="Matial arts with loads of heart. Wellcome to a paradise " />
+
 
 </div>
 
