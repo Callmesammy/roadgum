@@ -27,7 +27,7 @@ const HearderPT = () => {
         window.location.href = url
     }
     return (  
-        <div className=" flex  w-full h-22 bg-primary text-white items-center justify-between flex-co">
+        <div className=" sticky z-50 top-0 flex px-8 w-full border h-52 bg-primary text-white items-center justify-between flex-co">
            <div className={`${mulish.className}w-full flex gap-3 items-center px-8 `}>
             <span onClick={()=>onclick("/discovery")} className="cursor-pointer">
                 <h1 className={`${philosopher.className} font-bold lg:text-4xl text-4xl font- `}> Roadgum</h1>
@@ -35,21 +35,28 @@ const HearderPT = () => {
             </span>
          
            </div>
-           {/** Mobile view */}
-           <div className="px-4 z-9999 lg:hidden">
-            <SheetView/>
-            
-            </div>
+         
            <div className="lg:flex gap-2 items-center hidden">
           
            </div>
-           <div className="w-full  justify-between flex px-3">
-            <div className="items-center w-full flex   rounded-md px-1 relative ">
+           <div className="w-full  justify-between flex ">
+            <div className="items-center w-full flex  rounded-md px-1 relative max-w-2xl">
             <IoMdSearch className="size-6 flex text-muted-foreground left-2 z-15 absolute cursor-pointer"/>
 
-            <Input placeholder="Search Products" className="w-full flex px-8  z-10 border border-muted-foreground focus-visible:ring-purple-600 absolute" />
+            <Input placeholder="Search Products" className="w-full bg-black flex px-8 rounded h-[47px] z-10 border border-muted-foreground focus-visible:ring-purple-600 absolute" />
             </div>
-           another
+            <div className="flex gap-2 w-">
+            <div className="border w-32 rounded h-[47px] bg-gray-300 text-black b">
+        dsd
+        </div>
+
+        <Link href={""} className="z-15 relative duration-300 hover:bg-pink-400 border-primary-foreground border w-32 items-center hover:-translate-y-1 transition-transform hover:-translate-x-1 flex justify-center text-sm rounded h-[47px] bg-gray-300 text-black b">
+    
+        Start selling   
+        </Link>  
+       
+            </div>
+
           </div>
         </div>
     );

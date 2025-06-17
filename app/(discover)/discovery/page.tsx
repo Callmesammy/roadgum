@@ -1,6 +1,6 @@
 const Discovery = () => {
     return (  
-        <div>
+        <div className="h-screen flex">
             Discovery 
         </div>
     );
