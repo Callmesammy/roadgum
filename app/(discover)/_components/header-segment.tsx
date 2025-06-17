@@ -27,7 +27,7 @@ const HearderPT = () => {
         window.location.href = url
     }
     return (  
-        <div className=" sticky z-50 top-0 flex px-8 w-full border h-52 bg-primary text-white items-center justify-between flex-co">
+        <div className=" sticky z-50 top-0 flex px-8 border-b w-full  border-muted-foreground h-52 bg-primary text-white items-center justify-between flex-co">
            <div className={`${mulish.className}w-full flex gap-3 items-center px-8 `}>
             <span onClick={()=>onclick("/discovery")} className="cursor-pointer">
                 <h1 className={`${philosopher.className} font-bold lg:text-4xl text-4xl font- `}> Roadgum</h1>
