@@ -44,7 +44,7 @@ export function Carding({
       </CardHeader>
       <CardContent className="flex flex-col txt-md gap-3">
       Popula tags
-      <div className="flex gap-2">
+      <div className="flex gap-2 pt-3">
          <div    className="w-auto bg-black rounded-full">
         <Link href={`/discovery? fiction-book = ${encodeURIComponent(others?.item2 ?? '')}`} className="bg-white h-8 truncate transition-transform hover:-translate-x-1 hover:-translate-y-1 text-sm justify-center  text-center border border-black flex text-black w-auto rounded-full p-1">{others?.item2}        </Link>
       </div>
