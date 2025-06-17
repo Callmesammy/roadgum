@@ -95,7 +95,12 @@ export default function Home() {
 <Carding color="bg-orange-400" others={{items: "Meditations", item1: "hypothesis", item2: "submliminal messages"}} image={"/pic/2.svg"} label="Audio" description="Open your ears and mind to interviews, meditations, and crime thrillers " />
 <Carding color="bg-red-400" others={{items: "notion template", item1: "investing", item2: "instagram"}} image={"/pic/3.svg"} label="Business & Money" description="Learn to earn in an increasingly unpredictable world  " />
 <Carding color="bg-yellow-400" others={{items: "comic", item1: "manga", item2: "anime"}} image={"/pic/4.svg"} label="Comics & Graphic Novels" description="Matial arts with loads of heart. Wellcome to a paradise " />
+<Carding color="bg-gray-400" others={{items: "mockup", item1: "textures", item2: "fonts"}} image={"/pic/5.svg"} label="Design" description="Code, design and ship your dream with these technical resources" />
 
+<Carding color="bg-pink-400" others={{items: "procreate", item1: "brushes", item2: "arts"}} image={"/pic/6.svg"} label="Drawing & Painting" description="Tutorials, plugins, and brushes from pro concept artists and illustrators." />
+<Carding color="bg-indigo-400" others={{items: "education", item1: "certification exams", item2: "learning"}} image={"/pic/7.svg"} label="Education" description="Pick up a new skill with courses and guides from world-class pros" />
+<Carding color="bg-blue-400" others={{items: "scr-fi", item1: "poetry ", item2: "fiction"}} image={"/pic/8.svg"} label="Fiction Books" description="Short stories, bovellas, and epic tomes full of interesting chracters and worlds" />
+<Carding color="bg-rose-400" others={{items: "after effects", item1: "vj loops ", item2: "luts"}} image={"/pic/9.svg"} label="Films" description="have a movie night with some of the best stories to hit the small screen" />
 
 </div>
 
