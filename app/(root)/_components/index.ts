@@ -1,3 +1,4 @@
+import { Label } from "@radix-ui/react-label"
 import { number } from "motion/react"
 
 export const Document11 = [
@@ -30,3 +31,40 @@ export const selling =[
 ]
 
 
+export const components =[
+    {
+        id: 1,
+        Label: "All",
+        url: "/discovery"
+    }, 
+    {
+        id: 2,
+        Label: "3D",
+        url: "/3d"
+    }, 
+    {
+        id: 3,
+        Label: "Design",
+        url: "/design"
+    }, 
+    {
+        id: 4,
+        Label: "Drawing & Painting",
+        url: "/painting"
+    }, 
+    {
+        id: 5,
+        Label: "Self Improvement",
+        url: "/improvement"
+    }, 
+    {
+        id: 6,
+        Label: "Music & Sound Design",
+        url: "/music"
+    }, 
+    {
+        id: 7,
+        Label: "More",
+        url: "/more"
+    }, 
+]

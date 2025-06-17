@@ -30,7 +30,7 @@ const Heading = () => {
         <div className=" flex  w-full h-22 bg-black text-white items-center justify-between">
            <div className={`${mulish.className}w-full flex gap-3 items-center px-3 `}>
             <span onClick={()=>onclick("/")} className="cursor-pointer">
-                <h1 className={`${philosopher.className} font-bold lg:text-4xl text-4xl font- `}> Roadgum</h1>
+                <h1 className={`${philosopher.className} font-bold lg:text-5xl text-5xl font- `}> Roadgum</h1>
                 
             </span>
             <a href="https://github.com/Callmesammy" target="_blank" className="flex">
