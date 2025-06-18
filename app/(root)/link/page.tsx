@@ -66,7 +66,11 @@ const Linking = () => {
             <FormItem>
               <FormLabel>Image</FormLabel>
               <FormControl>
-                <Input type="file" {...field} />
+                <Input type="file" onChange={(e)=> {
+                    const file = e.target.files?.[0]
+                    field.onChange(file)
+                }} 
+                 />
               </FormControl>
             
               <FormMessage />
