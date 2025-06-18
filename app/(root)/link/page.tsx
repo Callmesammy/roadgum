@@ -111,7 +111,7 @@ const Linking = () => {
         <div className="flex gap-3">
         <FormField
           control={form.control}
-          name="item"
+          name="items"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Item</FormLabel>
