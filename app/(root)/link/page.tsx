@@ -39,10 +39,10 @@ const Linking = () => {
     return ( 
         <div className="flex w-full flex-col pt-2 items-center justify-center space-y-5">
             <h1 className="text-3xl font-bold ">Sell your product</h1>
-            <div className="p-2  flex-col z-15 border-2 border-black max-w-lg px-5 rounded-md flex w-full pt-5 h-[700px] bg-secondary">
+            <div className="p-2  flex-col z-15 border-2 border-black max-w-lg px-5 rounded-md flex w-full pt-5 h-[600px] bg-secondary">
             <p className="font-bold text-xl pt-2">Input details on what you are selling </p>
             <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 w-full ">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="pt-3 space-y-8 w-full ">
         <FormField
           control={form.control}
           name="username"
@@ -59,12 +59,12 @@ const Linking = () => {
         />
         <FormField
           control={form.control}
-          name="ursername"
+          name="title"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Title</FormLabel>
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input placeholder="Enter Title" {...field}  />
               </FormControl>
               
               <FormMessage />
@@ -77,7 +77,7 @@ const Linking = () => {
           name="bio"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Bio</FormLabel>
+              <FormLabel>Description</FormLabel>
               <FormControl>
                 <Textarea
                   placeholder="Tell us a little bit about yourself"
@@ -92,11 +92,57 @@ const Linking = () => {
             </FormItem>
           )}
         />
-        <Button type="submit">Submit</Button>
+        <div className="flex gap-3">
+        <FormField
+          control={form.control}
+          name="item"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Item</FormLabel>
+              <FormControl>
+                <Input placeholder="Item" {...field}  />
+              </FormControl>
+              
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+ <FormField
+          control={form.control}
+          name="item"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Item1</FormLabel>
+              <FormControl>
+                <Input placeholder="Item" {...field}  />
+              </FormControl>
+              
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+ <FormField
+          control={form.control}
+          name="item3"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Item3</FormLabel>
+              <FormControl>
+                <Input placeholder="Item3" {...field}  />
+              </FormControl>
+              
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+
+
+        </div>
+        <Button type="submit" className=" cursor-pointer w-full">Submit</Button>
       </form>
     </Form>
             </div>
-            <div className="p-2 translate-x-2 translate-y-2 z-10 max-w-lg border px-5 rounded-md flex w-full pt-5 h-[700px] bg-black absolute"/>
+            <div className="p-2 translate-x-2 translate-y-2 z-10 max-w-lg border px-5 rounded-md flex w-full pt-5 h-[602px] bg-black absolute"/>
 
         </div>
      );
