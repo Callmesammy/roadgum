@@ -40,31 +40,109 @@ export const components =[
     {
         id: 2,
         Label: "3D",
+        tools: 
+        {
+        doc: [
+            "All 3D",
+            "3D Assets",
+            "Animating",
+            "AR/VR", 
+            "Avatars", 
+            "Character Design", 
+            "Rigging", 
+            "Textures", 
+            "VRChat"
+        ]},
         url: "/3d"
     }, 
     {
         id: 3,
         Label: "Design",
+        tools: 
+        {
+        doc: [
+            "All 3D",
+            "3D Assets",
+            "Animating",
+            "AR/VR", 
+            "Avatars", 
+            "Character Design", 
+            "Rigging", 
+            "Textures", 
+            "VRChat"
+        ]},
         url: "/design"
     }, 
     {
         id: 4,
         Label: "Drawing & Painting",
+        tools: 
+        {
+        doc: [
+            "All 3D",
+            "3D Assets",
+            "Animating",
+            "AR/VR", 
+            "Avatars", 
+            "Character Design", 
+            "Rigging", 
+            "Textures", 
+            "VRChat"
+        ]},
         url: "/painting"
     }, 
     {
         id: 5,
         Label: "Self Improvement",
+        tools: 
+        {
+        doc: [
+            "All 3D",
+            "3D Assets",
+            "Animating",
+            "AR/VR", 
+            "Avatars", 
+            "Character Design", 
+            "Rigging", 
+            "Textures", 
+            "VRChat"
+        ]},
         url: "/improvement"
     }, 
     {
         id: 6,
         Label: "Music & Sound Design",
+        tools: 
+        {
+        doc: [
+            "All 3D",
+            "3D Assets",
+            "Animating",
+            "AR/VR", 
+            "Avatars", 
+            "Character Design", 
+            "Rigging", 
+            "Textures", 
+            "VRChat"
+        ]},
         url: "/music"
     }, 
     {
         id: 7,
         Label: "More",
+        tools: 
+        {
+        doc: [
+            "All 3D",
+            "3D Assets",
+            "Animating",
+            "AR/VR", 
+            "Avatars", 
+            "Character Design", 
+            "Rigging", 
+            "Textures", 
+            "VRChat"
+        ]},
         url: "/more"
     }, 
 ]

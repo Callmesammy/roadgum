@@ -9,7 +9,6 @@ import { BsBookmarkHeartFill } from "react-icons/bs";
 import { components } from "@/app/(root)/_components";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { useState } from "react";
 import { GoTriangleDown } from "react-icons/go";
 
 const philosopher = Philosopher({
@@ -23,7 +22,6 @@ const mulish = Mulish({
   });
 
 const HearderPT = () => {
-  const [entering, setEntering] = useState(false)
   const pathName = usePathname()
    
     const onclick=(url: string)=>{
@@ -82,15 +80,14 @@ const HearderPT = () => {
       <div  key={dox.id} className="relative w-auto flex bg-white p-0 z-10 rounded-4xl  ">
       <Link  href={dox.url}  className={cn(" group w-full hover:bg-black p-2 z-10 gap-4 rounded-full text-white  duration-300 font-semibold bg-gray-700  items-center hover:-translate-y-0.5 transition-transform hover:-translate-x-1 flex justify-center text-md ", isActive && "-translate-x-0.5 -translate-y-0.5 bg-black flex ")}>
            {dox.Label}
-           {dox.id === 1 ? (
-              <div className="hidden"> </div>
-           ): (
-  <div className="group-hover:flex justify-center  flex-col absolute hidden top-10 items-center">
-              <GoTriangleDown />
-              <div className="w-42 h-[52px] bg-red-500 flex">
-
-              </div>
-             </div>
+           {dox.id !== 1 && (
+        <div className="absolute top-10 left-1/2 -translate-x-1/2 hidden group-hover:flex flex-col items-center z-20">
+          <GoTriangleDown className="text-black" />
+          <div className="w-64 text-sm h-full bg-red-500 flex flex-col text-white p-2 rounded-md shadow-lg">
+          
+          </div>
+        </div>
+      
            )}
          
          </Link>                 
