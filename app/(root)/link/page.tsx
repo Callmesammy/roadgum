@@ -18,7 +18,24 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
  
 const formSchema = z.object({
-  username: z.string().min(2).max(50),
+    label: z.string().min(2).max(15,{
+        message: "Enter your title "
+    }),
+    image: z.string({
+        message: "Enter your title "
+    }),
+  description: z.string().min(2).max(105,{
+    message: "Enter your title "
+}),
+item1: z.string().min(2).max(15,{
+    message: "Enter your title "
+}), 
+        item2:z.string().min(2).max(15,{
+            message: "Enter your title "
+        }),
+        items:z.string().min(2).max(15,{
+            message: "Enter your title "
+        }),
 })
 
 const Linking = () => {
@@ -26,7 +43,6 @@ const Linking = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      username: "",
     },
   })
  
@@ -38,14 +54,14 @@ const Linking = () => {
   }
     return ( 
         <div className="flex w-full flex-col pt-2 items-center justify-center space-y-5">
-            <h1 className="text-3xl font-bold ">Sell your product</h1>
+            <h1 className="text-3xl font-bold capitalize ">Sell your product</h1>
             <div className="p-2  flex-col z-15 border-2 border-black max-w-lg px-5 rounded-md flex w-full pt-5 h-[600px] bg-secondary">
             <p className="font-bold text-xl pt-2">Input details on what you are selling </p>
             <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="pt-3 space-y-8 w-full ">
         <FormField
           control={form.control}
-          name="username"
+          name="image"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Image</FormLabel>
@@ -59,7 +75,7 @@ const Linking = () => {
         />
         <FormField
           control={form.control}
-          name="title"
+          name="label"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Title</FormLabel>
@@ -74,7 +90,7 @@ const Linking = () => {
 
 <FormField
           control={form.control}
-          name="bio"
+          name="description"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Description</FormLabel>
@@ -109,7 +125,7 @@ const Linking = () => {
         />
  <FormField
           control={form.control}
-          name="item"
+          name="item1"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Item1</FormLabel>
@@ -123,7 +139,7 @@ const Linking = () => {
         />
  <FormField
           control={form.control}
-          name="item3"
+          name="item2"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Item3</FormLabel>

@@ -12,9 +12,6 @@ import {
 import { Carditems } from './index.d';
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
-import { Button } from "@/components/ui/button";
 
 export function Carding({
     id,
