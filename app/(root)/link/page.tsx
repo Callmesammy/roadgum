@@ -16,13 +16,18 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import insertSales from "@/app/(discover)/actions/actions"
+import { useRouter } from "next/navigation"
+import { useState } from "react"
+import { Loader2 } from "lucide-react"
+import { toast } from "sonner"
  
-const formSchema = z.object({
+export const formSchema = z.object({
     label: z.string().min(2).max(15,{
         message: "Enter your title "
     }),
-    image: z.string({
-        message: "Enter your title "
+    image: z.string().min(1, {
+      message: " Choose image"
     }),
   description: z.string().min(2).max(105,{
     message: "Enter your title "
@@ -39,6 +44,8 @@ item1: z.string().min(2).max(15,{
 })
 
 const Linking = () => {
+  const router = useRouter()
+  const [loading, setLoading] = useState(false)
       // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -47,11 +54,25 @@ const Linking = () => {
   })
  
   // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values)
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setLoading(true)
+try{
+   const docu =  await insertSales(values)
+   if(!docu){
+    toast.error("Something went wrong")
+   }else{
+    toast.success("Successfully done")
+    router.push("/price")
+   }
+
+}catch(error){
+  console.log(error)
+} finally{
+    setLoading(false)
   }
+   console.log(values)
+  }
+ 
     return ( 
         <div className="flex w-full flex-col pt-2 items-center justify-center space-y-5">
             <h1 className="text-3xl font-bold capitalize ">Sell your product</h1>
@@ -66,11 +87,7 @@ const Linking = () => {
             <FormItem>
               <FormLabel>Image</FormLabel>
               <FormControl>
-                <Input type="file" onChange={(e)=> {
-                    const file = e.target.files?.[0]
-                    field.onChange(file)
-                }} 
-                 />
+                <Input disabled={loading} type="file" accept="Image" {...field}/>
               </FormControl>
             
               <FormMessage />
@@ -84,7 +101,7 @@ const Linking = () => {
             <FormItem>
               <FormLabel>Title</FormLabel>
               <FormControl>
-                <Input placeholder="Enter Title" {...field}  />
+                <Input disabled={loading} placeholder="Enter Title" {...field}  />
               </FormControl>
               
               <FormMessage />
@@ -99,7 +116,7 @@ const Linking = () => {
             <FormItem>
               <FormLabel>Description</FormLabel>
               <FormControl>
-                <Textarea
+                <Textarea disabled={loading}
                   placeholder="Tell us a little bit about yourself"
                   className="resize-none"
                   {...field}
@@ -120,7 +137,7 @@ const Linking = () => {
             <FormItem>
               <FormLabel>Item</FormLabel>
               <FormControl>
-                <Input placeholder="Item" {...field}  />
+                <Input disabled={loading} placeholder="Item" {...field}  />
               </FormControl>
               
               <FormMessage />
@@ -134,7 +151,7 @@ const Linking = () => {
             <FormItem>
               <FormLabel>Item1</FormLabel>
               <FormControl>
-                <Input placeholder="Item" {...field}  />
+                <Input disabled={loading} placeholder="Item" {...field}  />
               </FormControl>
               
               <FormMessage />
@@ -148,7 +165,7 @@ const Linking = () => {
             <FormItem>
               <FormLabel>Item3</FormLabel>
               <FormControl>
-                <Input placeholder="Item3" {...field}  />
+                <Input disabled={loading} placeholder="Item3" {...field}  />
               </FormControl>
               
               <FormMessage />
@@ -158,7 +175,7 @@ const Linking = () => {
 
 
         </div>
-        <Button type="submit" className=" cursor-pointer w-full">Submit</Button>
+        <Button disabled={loading} type="submit" className=" cursor-pointer w-full">Submit {loading && <Loader2 className="animate-spin size-5"/>} </Button>
       </form>
     </Form>
             </div>
