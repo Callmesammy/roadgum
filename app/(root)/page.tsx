@@ -11,6 +11,7 @@ import Remarks from "./_components/remarks";
 import Remarks2 from "./_components/remarks2";
 import { Carding } from "./_components/card-input";
 import Remarks3 from "./_components/remarks3";
+import Lastpage from "./_components/lastpage";
 
 const philosopher = Philosopher({
   subsets: ["latin"],
@@ -114,6 +115,10 @@ export default function Home() {
 
 <div className="border-black w-full border-2 bg-white h-full">
 <Remarks3/>
+
+</div>
+<div className="border-black w-full border-2 bg-white h-full">
+<Lastpage/>
 
 </div>
     </div>

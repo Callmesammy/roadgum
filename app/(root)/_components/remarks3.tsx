@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image";
+import Link from "next/link";
 import CountUp from 'react-countup';
 
 
@@ -35,7 +36,7 @@ const Remarks3 = () => {
 
      
             
-            <div className="w-full pt-22 items-center flex-col px-3 h-[200px]  flex justify-center bg-white">
+            <div className="w-full pt-12 items-center flex-col px-3 h-[300px]  flex justify-center bg-white">
             <CountUp start={-875.039}
   end={3527.012}
   duration={2.75}
@@ -44,15 +45,38 @@ const Remarks3 = () => {
   decimal=","
   prefix="$ "className=" items-center text-7xl flex justify-center font-bold tracking-wider"/>
 
- <div className=" pt-4 text-2xl     justify-center  gap-2 w-full shrink-0   items-center flex group  border-black rounded-full  group-hover:-translate-x-1 duration-300 group-hover:-translate-y-1 transition-transform">
+ <div className=" pt-4 text-2xl justify-center w-full  items-center flex ">
 The amount of income earned by Gumroad digital entrepreneurs last week.</div>
 
 </div>
- <div className="w-full h-[500px] relative flex ">
-<Image src={"/las.webp"} alt="max image" fill className="object-contain lg:pt-3 pt-[100px] flex z-10"/>
+ <div className="w-full h-[400px] relative flex ">
+<Image src={"/las.webp"} alt="max image" fill className="object-center lg:pt-3 pt-[100px] flex z-10"/>
 
 
 
+</div>
+
+
+<div className="w-full px-3 h-[400px] space-y-5 flex-col relative items-center justify-center text-center bg-pink-400 flex ">
+
+<h1 className="text-5xl font-semibold tracking-wider"> Share your work. Someone out there needs it.  </h1>
+
+<Link href={"/"}  className="flex md:w-62 group relative w-full pt-6">
+      
+      <div className="w-full justify-center z-20 flex items-center p-4  text-muted-foreground   bg-yellow-400 transition-transform rounded-xl border border-muted-foreground">                 
+      <h1 className="text-xl "> Start selling</h1>
+
+
+ </div>
+      <span className=" w-full justify-center text-center cursor-pointer z-30 p-4 flex items-center absolute  bg-black   text-white group-hover:-translate-y-2 group-hover:-translate-x-1 transition-transform rounded-xl border border-muted-foreground">
+     <h1 className="text-xl  "> Start selling</h1>
+
+         </span> 
+         <span className="w-full justify-center z-10 cursor-pointer p-4 flex items-center absolute  bg-red-500   text-white group-hover:translate-y-2 group-hover:translate-x-1 transition-transform rounded-xl border border-muted-foreground">
+     <h1 className="text-xl "> Start selling</h1>
+
+         </span>
+ </Link>
 </div>
 
 
