@@ -38,10 +38,10 @@ const Remarks3 = () => {
             
             <div className="w-full pt-12 items-center flex-col px-3 h-[300px]  flex justify-center bg-white">
             <CountUp start={-875.039}
-  end={3527.012}
+  end={3547.012}
   duration={2.75}
   separator=" "
-  decimals={4}
+  decimals={3}
   decimal=","
   prefix="$ "className=" items-center text-7xl flex justify-center font-bold tracking-wider"/>
 
