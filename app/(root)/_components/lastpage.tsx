@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { FaArrowRight } from "react-icons/fa6";
+import { FooterItems } from ".";
+import Link from "next/link";
 
 const Lastpage = () => {
     return ( 
@@ -13,6 +15,13 @@ const Lastpage = () => {
                  <Button className="h-[50px] w-[50px] bg-pink-400 hover:bg-pink-300 cursor-pointer"><FaArrowRight  />
                  </Button>
                 </span>
+                <div>
+                    {FooterItems.map((foot, keys)=>(
+                        <Link key={keys} href={foot.url}>
+                            <h1>{foot.name}</h1>
+                        </Link>
+                    ))}
+                </div>
                 </div>
 
             </div>

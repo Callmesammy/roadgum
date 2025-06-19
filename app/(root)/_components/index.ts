@@ -30,119 +30,52 @@ export const selling =[
     "→ Seriously, sell anything!"
 ]
 
-
-export const components =[
+export const FooterItems =[
     {
-        id: 1,
-        Label: "All",
+        name: "Discover",
         url: "/discovery"
     }, 
+
     {
-        id: 2,
-        Label: "3D",
-        tools: 
-        {
-        doc: [
-            "All 3D",
-            "3D Assets",
-            "Animating",
-            "AR/VR", 
-            "Avatars", 
-            "Character Design", 
-            "Rigging", 
-            "Textures", 
-            "VRChat"
-        ]},
-        url: "/3d"
+        name: "Blog",
+        url: "/blog"
+    }, 
+
+    {
+        name: "Pricing",
+        url: "/pricing"
     }, 
     {
-        id: 3,
-        Label: "Design",
-        tools: 
-        {
-        doc: [
-            "All 3D",
-            "3D Assets",
-            "Animating",
-            "AR/VR", 
-            "Avatars", 
-            "Character Design", 
-            "Rigging", 
-            "Textures", 
-            "VRChat"
-        ]},
-        url: "/design"
+        name: "Features",
+        url: "/features"
     }, 
     {
-        id: 4,
-        Label: "Drawing & Painting",
-        tools: 
-        {
-        doc: [
-            "All 3D",
-            "3D Assets",
-            "Animating",
-            "AR/VR", 
-            "Avatars", 
-            "Character Design", 
-            "Rigging", 
-            "Textures", 
-            "VRChat"
-        ]},
-        url: "/painting"
+        name: "About",
+        url: "/about"
     }, 
     {
-        id: 5,
-        Label: "Self Improvement",
-        tools: 
-        {
-        doc: [
-            "All 3D",
-            "3D Assets",
-            "Animating",
-            "AR/VR", 
-            "Avatars", 
-            "Character Design", 
-            "Rigging", 
-            "Textures", 
-            "VRChat"
-        ]},
-        url: "/improvement"
+        name: "Small Bets",
+        url: "/bets"
     }, 
     {
-        id: 6,
-        Label: "Music & Sound Design",
-        tools: 
-        {
-        doc: [
-            "All 3D",
-            "3D Assets",
-            "Animating",
-            "AR/VR", 
-            "Avatars", 
-            "Character Design", 
-            "Rigging", 
-            "Textures", 
-            "VRChat"
-        ]},
-        url: "/music"
+        name: "Help",
+        url: "/help"
     }, 
     {
-        id: 7,
-        Label: "More",
-        tools: 
-        {
-        doc: [
-            "All 3D",
-            "3D Assets",
-            "Animating",
-            "AR/VR", 
-            "Avatars", 
-            "Character Design", 
-            "Rigging", 
-            "Textures", 
-            "VRChat"
-        ]},
-        url: "/more"
+        name: "Board meetings",
+        url: "/meetings"
     }, 
+    {
+        name: "Terms of Services",
+        url: "/terms"
+    }, 
+    {
+        name: "Privacy Policy",
+        url: "/privacy"
+    }, 
+
 ]
+
+    
+
+    
