@@ -57,7 +57,7 @@ The amount of income earned by Gumroad digital entrepreneurs last week.</div>
 </div>
 
 
-<div className="w-full px-3 h-[400px] space-y-5 flex-col relative items-center justify-center text-center bg-pink-400 flex ">
+<div className="w-full px-3 h-[300px] space-y-5 flex-col relative items-center justify-center text-center bg-pink-400 flex ">
 
 <h1 className="text-5xl font-semibold tracking-wider"> Share your work. Someone out there needs it.  </h1>
 
