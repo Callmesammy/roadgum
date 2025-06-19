@@ -10,6 +10,7 @@ import Wrightups from "./_components/down-writeups";
 import Remarks from "./_components/remarks";
 import Remarks2 from "./_components/remarks2";
 import { Carding } from "./_components/card-input";
+import Remarks3 from "./_components/remarks3";
 
 const philosopher = Philosopher({
   subsets: ["latin"],
@@ -88,9 +89,12 @@ export default function Home() {
 
 </div>
 
+<div className="border-black w-full border-2 bg-white h-full">
+<div className="px-3 text-5xl tracking-wider  h-[200px] items-center justify-center flex w-full">
+<h1 className="font-semibold ">Looking for inspiration on what you can sell?</h1>
 
-<div className="border-black grid md:grid-cols-2 lg:grid-cols-3 w-full border-2 bg-white h-full">
-    
+</div>
+<div className=" grid md:grid-cols-2 lg:grid-cols-3 w-full bg-white h-full">
 <Carding color="bg-green-400" others={{items: "Blend", item1: "3d Model", item2: "spark"}} image={"/pic/1.svg"} label="3d" description="Perfect ypur craft with thge same tools used at Dream works and pixar " />
 <Carding color="bg-orange-400" others={{items: "Meditations", item1: "hypothesis", item2: "submliminal messages"}} image={"/pic/2.svg"} label="Audio" description="Open your ears and mind to interviews, meditations, and crime thrillers " />
 <Carding color="bg-red-400" others={{items: "notion template", item1: "investing", item2: "instagram"}} image={"/pic/3.svg"} label="Business & Money" description="Learn to earn in an increasingly unpredictable world  " />
@@ -104,10 +108,12 @@ export default function Home() {
 
 </div>
 
+</div>
+
 {/*** Search Testing segment  ***/}
 
-<div className="border-black grid md:grid-cols-2 lg:grid-cols-3 w-full border-2 bg-white h-full">
-yatty 
+<div className="border-black w-full border-2 bg-white h-full">
+<Remarks3/>
 
 </div>
     </div>
