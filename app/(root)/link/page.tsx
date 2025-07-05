@@ -43,7 +43,7 @@ item1: z.string().min(2).max(15,{
         }),
 })
 
-const Linking = () => {
+const Linking = () => {  
   const router = useRouter()
   const [loading, setLoading] = useState(false)
       // 1. Define your form.
@@ -101,7 +101,7 @@ try{
             <FormItem>
               <FormLabel>Title</FormLabel>
               <FormControl>
-                <Input disabled={loading} placeholder="Enter Title" {...field}  />
+                <Input  disabled={loading} placeholder="Enter title" {...field}  />
               </FormControl>
               
               <FormMessage />
