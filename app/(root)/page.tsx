@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { Philosopher, Mulish } from "next/font/google";
+import {  Mulish } from "next/font/google";
 import { BackgroundLines } from '@/components/ui/background-lines';
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
@@ -13,10 +12,7 @@ import { Carding } from "./_components/card-input";
 import Remarks3 from "./_components/remarks3";
 import Lastpage from "./_components/lastpage";
 
-const philosopher = Philosopher({
-  subsets: ["latin"],
-  weight: '700'
-});
+
 const mulish = Mulish({
     subsets: ["latin"],
     weight: '700'
