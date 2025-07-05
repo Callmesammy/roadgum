@@ -33,25 +33,21 @@ export default function Home() {
       Anyone can earn their first dollar online. Just start with what you know,
      <br className="hidden md:flex"/> see what sticks, and get paid.  It's that easy
       </p>
-      <div className=" grid space-y-3 md:flex items-center gap-1 pt-6">
+      <div className=" grid  md:flex items-center gap-2 pt-6 lg:w-xl h-10 w-full">
       <Link href={"/"}  className="flex group relative w-full">
       
-      <div className="w-full justify-center z-20 flex items-center p-5  text-muted-foreground   bg-yellow-400 transition-transform rounded-xl border border-muted-foreground">                 
-      <h1 className="text-xl capitalize"> start selling</h1>
+      <div className="w-full h-12 justify-center z-20 flex items-center   text-muted-foreground   bg-yellow-400 transition-transform rounded-xl ">                 
 
 
  </div>
-      <span className=" w-full justify-center text-center cursor-pointer z-30 p-5 flex items-center absolute  bg-black   text-white group-hover:-translate-y-2 group-hover:-translate-x-1 transition-transform rounded-xl border border-muted-foreground">
-     <h1 className="text-xl capitalize "> start selling</h1>
-
+      <span className=" w-full h-12 justify-center text-center cursor-pointer z-30  flex items-center absolute  bg-black   text-white group-hover:-translate-y-2 group-hover:-translate-x-1 transition-transform rounded-xl ">
+      <h1>Start selling</h1>
          </span> 
-         <span className="w-full justify-center z-10 cursor-pointer p-5 flex items-center absolute  bg-red-500   text-white group-hover:translate-y-2 group-hover:translate-x-1 transition-transform rounded-xl border border-muted-foreground">
-     <h1 className="text-xl capitalize"> start selling</h1>
-
+         <span className="w-full h-12  justify-center z-10 cursor-pointer  flex items-center absolute  bg-red-500   text-white group-hover:translate-y-2 group-hover:translate-x-1 transition-transform rounded-xl ">
          </span>
  </Link>
- <div className=" w-100  items-center z-30 ">
-     <Input placeholder="Search Marketplace" className=" bg-black flex w-full h-18 text-lg text-white"/>
+ <div className=" w-full flex  items-center z-30  ">
+     <Input placeholder="Search Marketplace" className="h-12 bg-black flex w-full  text-lg text-white"/>
 
  </div>
 
